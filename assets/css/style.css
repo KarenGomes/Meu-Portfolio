@@ -22,11 +22,11 @@ button {
     background-color: var(--cinza);
     color: var(--branco);
     border: none;
+    border-radius: 24px;
 }
 
 header {
     display: flex;
-    width: 1440px;
     height: 56px;
     padding: 12px 120px;
     justify-content: center;
@@ -47,4 +47,102 @@ header ul{
     flex: 1 0 0;
     list-style: none;    
 
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+
+}
+
+.texto-inicio {
+    width: 633px;
+}
+
+.texto-inicio h1{
+    font-size: 96px;
+    line-height: 100%;
+
+}
+
+.texto-inicio h1 span {
+    color: var(--azul-esverdeado);
+}
+
+.inicio-botao {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.inicio-botao button {
+    display: flex;
+    padding: 10px 32px;
+    gap: 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+
+}
+
+.inicio-botao button img {
+    width: 24px;
+    height: 24px;
+}
+
+#projetos-botao {
+    align-items: flex-start;
+    border: 1px solid var(--azul-esverdeado);
+    background-color: var(--cinza-escuro);
+}
+
+#CV-botao {
+    align-items: center;
+    backdrop-filter: blur(2px);
+
+}
+
+.Sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    gap: 104px;
+}
+
+.conteudo img {
+    width: 524px;
+    height: 524px;
+    flex-shrink: 0;
+    padding-top: 168px;
+}
+
+.conteudo h1 {
+    color: var(--azul-esverdeado);
+    align-items: center;
+    font-size: 48px;
+    line-height: 150%;
+
+}
+
+.texto-sobre-mim {
+    display: flex;
+    width: 588px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    font-size: 24px;
+    line-height: 150%;
+    padding-left: 122px;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    padding-top: 136px;
 }

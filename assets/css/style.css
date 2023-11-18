@@ -32,20 +32,36 @@ header {
     justify-content: center;
     align-items: center;
     gap: 752px;
+    z-index: 1;
+    position: relative;
+}
+
+#perfil-inicio {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 header a {
-    text-decoration: none;
     color: var(--branco);
     font-family: 'Comfortaa';
 }
 
-header ul{
+ul {
+    list-style: none;
     display: flex;
     align-items: flex-start;
+}
+
+header ul{
     gap: 48px;
-    flex: 1 0 0;
-    list-style: none;    
+    flex: 1 0 0;    
 
 }
 
@@ -58,6 +74,7 @@ header ul{
 
 .texto-inicio {
     width: 633px;
+    padding-top: 120px;
 }
 
 .texto-inicio h1{
@@ -74,6 +91,7 @@ header ul{
     display: flex;
     align-items: center;
     gap: 24px;
+    padding-bottom: 366px;
 }
 
 .inicio-botao button {
@@ -118,7 +136,7 @@ header ul{
     width: 524px;
     height: 524px;
     flex-shrink: 0;
-    padding-top: 168px;
+    padding-right: 102px;
 }
 
 .conteudo h1 {
@@ -126,6 +144,7 @@ header ul{
     align-items: center;
     font-size: 48px;
     line-height: 150%;
+    align-self: stretch;
 
 }
 
@@ -140,9 +159,106 @@ header ul{
     padding-left: 122px;
 }
 
+.texto-sobre-mim p {
+    align-self: stretch;
+}
+
 .icones {
     display: flex;
     align-items: center;
     gap: 21px;
     padding-top: 136px;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-decorado {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 136px;
+}
+
+.titulo-decorado h1 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+#retangulo {
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: -35px;
+    background: var(--azul-esverdeado);
+
+}
+
+.projeto {
+    padding-top: 105px;
+    display: flex;
+    align-items: center;
+}
+
+.projetos-container {
+    display: flex;
+}
+
+.texto-projeto {
+    display: flex;
+    width: 406.678px;
+    height: 524px;
+    padding: 146.5px 38.881px 145.5px 50.441px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 24px;
+}
+
+#imagem-projeto {
+    width: 496px;
+    height: 526px;
+    background-color: var(--branco);
+}
+
+#nome-projeto {
+    color: var(--azul-esverdeado);
+    font-size: 40px;
+    line-height: 150%;
+    align-self: stretch;
+    font-family: 'Playfair Display';
+}
+
+#descricao-projeto {
+    align-self: stretch;
+    font-size: 18px;
+    line-height: 150%;
+    
+}
+
+#ver-projeto {
+    display: flex;
+    padding: 8px 24px;
+    align-items: flex-start;
+    border-radius: 24px;
+    background-color: var(--cinza-escuro);
+    border: 1px solid var(--azul-esverdeado);
+    align-self: first baseline;
+}
+
+#direita, #esquerda {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -10,6 +10,7 @@ body {
     color: var(--branco);
     width: 100%;
     height: 100vh;
+    margin: 0;
     font-family: 'Nunito';
 }
 
@@ -46,6 +47,7 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--branco);
 }
 
 header a {
@@ -161,7 +163,7 @@ header ul{
 
 .texto-sobre-mim p {
     align-self: stretch;
-}
+}   
 
 .icones {
     display: flex;
@@ -203,6 +205,7 @@ header ul{
     padding-top: 105px;
     display: flex;
     align-items: center;
+    gap: 80px;
 }
 
 .projetos-container {
@@ -211,13 +214,15 @@ header ul{
 
 .texto-projeto {
     display: flex;
-    width: 406.678px;
+    width: 496px;
     height: 524px;
     padding: 146.5px 38.881px 145.5px 50.441px;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
     gap: 24px;
+    background: var(--cinza);  
+    box-sizing: border-box;
 }
 
 #imagem-projeto {
@@ -246,7 +251,7 @@ header ul{
     padding: 8px 24px;
     align-items: flex-start;
     border-radius: 24px;
-    background-color: var(--cinza-escuro);
+    background-color: var(--cinza);
     border: 1px solid var(--azul-esverdeado);
     align-self: first baseline;
 }
@@ -254,11 +259,95 @@ header ul{
 #direita, #esquerda {
     width: 70px;
     height: 70px;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
 }
+
+#direita img, #esquerda img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.contato {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    padding-bottom: 168px;
+}
+
+form {
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;  
+}
+
+form label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 16px;
+
+}
+
+form input {
+    margin-bottom: 24px;
+    background: var(--cinza);
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: var(--branco);
+    font-family: 'Comfortaa';
+}
+
+form button {
+    display: flex;
+    padding: 8px 24px;
+    align-items: flex-start;
+    border-radius: 8px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#mensagem {
+    height: 160px;
+    width: 400px;
+    background: var(--cinza);
+    color: var(--branco);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-family: 'Comfortaa';
+}
+
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 92px;
+
 }
+
+footer ul {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+footer .icones {
+    padding-top: 39px;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
+

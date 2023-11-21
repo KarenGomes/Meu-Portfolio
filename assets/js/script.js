@@ -5,22 +5,22 @@ let imagem = document.getElementById('imagem-projeto');
 
 const projetos = [
     {
-        nome: "nome",
-        descricao: "I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.",
-        img: 'caminho da imagem',
-        projetoURL: 'link'
+        nome: "To-Do-List",
+        descricao: "To do List usando HTML, CSS e JAVASCRIPT com um banco de dados local no navegador.",
+        img: './assets/images/projeto1.jpg',
+        projetoURL: 'https://github.com/KarenGomes/To-Do-List'
     },
     {
-        nome: "nome 2",
-        descricao: "descrição do projeto 2",
-        img: 'caminho da imagem',
-        projetoURL: 'link'
+        nome: "ExpressaoPos-fixa",
+        descricao: "A notação pós-fixa, diferentemente da notação infixa tradicional, o operador é posicionado após os operandos, dessa forma dispensando o uso de parênteses. Programa em C que recebe uma expressão pós-fixa, preenche uma fila dinâmica e retorna o resultado da expressão.",
+        img: './assets/images/projeto2.jpg',
+        projetoURL: 'https://github.com/KarenGomes/ExpressaoPos-fixa'
     },
     {
-        nome: "nome 3",
-        descricao: "descrição do projeto 3",
-        img: 'caminho da imagem',
-        projetoURL: 'link'
+        nome: "7DaysOfCodeALURA",
+        descricao: "#7DaysOfCode HTML e CSS. Criando uma página completa de 'Vagas' de uma empresa fictícia com Giovanna Moeller.",
+        img: './assets/images/projeto3.jpg',
+        projetoURL: 'https://github.com/KarenGomes/7DaysOfCodeALURA'
     }
 ]
 
@@ -38,10 +38,13 @@ function AtualizaElementos() {
 function VerificaElemento(){
     if (indice === 0) {
         AtualizaElementos();
+        CriaElemento();
     }else if ( indice === 1) {
         AtualizaElementos();
+        CriaElemento();
     }else {
         AtualizaElementos();
+        CriaElemento();
     }
     
 }
@@ -59,4 +62,12 @@ function MudarProjetoEsquerda(){
         indice--;
         VerificaElemento();
     }
+}
+
+function Redireciona(){
+    window.location.href = projetos[indice].projetoURL;
+}
+
+function CriaElemento(){
+    imagem.innerHTML = `<img src="${projetos[indice].img}" id= "imagem-add">`;
 }

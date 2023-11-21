@@ -225,11 +225,12 @@ header ul{
     box-sizing: border-box;
 }
 
-#imagem-projeto {
+#imagem-projeto, #imagem-add {
     width: 496px;
     height: 526px;
     background-color: var(--branco);
 }
+
 
 #nome-projeto {
     color: var(--azul-esverdeado);

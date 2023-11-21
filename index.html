@@ -57,16 +57,16 @@
             <div id="retangulo"></div>
         </div>
         <div class="projeto">
-            <button id="esquerda"><img src="assets/images/arrow-left.png"></button>
+            <button id="esquerda" onclick="MudarProjetoEsquerda()"><img src="assets/images/arrow-left.png"></button>
             <div class="projetos-container">   
                 <div class="texto-projeto">
-                    <span id="nome-projeto">Nome do projeto</span>
+                    <span id="nome-projeto"></span>
                     <span id="descricao-projeto">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</span>
                     <button id="ver-projeto">Ver projeto</button>
                 </div>
                 <div id="imagem-projeto"></div>
             </div>
-            <button id="direita"><img src="assets/images/arrow-right.png"></button>
+            <button id="direita" onclick="MudarProjetoDireta()"><img src="assets/images/arrow-right.png"></button>
         </div>
 
     </section>
@@ -76,13 +76,14 @@
             <h1>Entre em contato</h1>
             <div id="retangulo"></div>
         </div>
-        <form id="formulario-contato">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="formulario-contato">
+            <input type="hidden" name="accessKey" value="8055efce-2af0-4d25-aec0-3e85c8179347"> 
             <label>E-mail</label>
-            <input type="email" id="email">
+            <input type="email" name="email" required>
             <label>Assunto</label>
-            <input type="text" id="assunto">
+            <input type="text" name="subject" required>
             <label>mensagem</label>
-            <textarea id="mensagem"></textarea>
+            <textarea id="mensagem" name="message" required></textarea>
             <button id="enviar-btn">Enviar</button>
         </form>
     </section>
@@ -115,30 +116,6 @@
     </footer>
 
 </body>
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-<script>
-    const btn = document.getElementById('enviar-btn')
-    btn.addEventListener('click', function(e){
-        e.preventDefault()
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('assunto').value;
-        const message = document.getElementById('mensagem').value;
- 
-        
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "karen.gomes12023@gmail.com",
-    Password : "xoar zyhg chgm gexd",
-    To : 'karen.gomes12023@gmail.com',
-    From : email,
-    Subject : subject,
-    Body : message
-}).then(
-  message => alert(message)
-);
 
-    })
-    
-</script>
+<script src="assets/js/script.js"></script>
 </html>

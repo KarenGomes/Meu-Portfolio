@@ -42,6 +42,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    visibility: hidden;
 
 }
 
@@ -77,6 +78,7 @@ header ul{
 .texto-inicio {
     width: 633px;
     padding-top: 120px;
+    visibility: hidden;
 }
 
 .texto-inicio h1{
@@ -94,6 +96,7 @@ header ul{
     align-items: center;
     gap: 24px;
     padding-bottom: 366px;
+    visibility: hidden;
 }
 
 .inicio-botao button {
@@ -159,6 +162,7 @@ header ul{
     font-size: 24px;
     line-height: 150%;
     padding-left: 122px;
+    visibility: hidden;
 }
 
 .texto-sobre-mim p {
@@ -184,6 +188,7 @@ header ul{
     justify-content: center;
     align-items: center;
     padding-top: 136px;
+    visibility: hidden;
 }
 
 .titulo-decorado h1 {
@@ -206,6 +211,7 @@ header ul{
     display: flex;
     align-items: center;
     gap: 80px;
+    visibility: hidden;
 }
 
 .projetos-container {

@@ -19,3 +19,17 @@ sr.reveal('.conteudo img ', {duration: 2000});
 
 sr.reveal('.projeto ', {duration: 2000});
 
+sr.reveal('#github', {
+    rotate: {x: 0, y: 0, z: 40},    
+    duration: 1000
+});
+
+sr.reveal('#linkedin', {
+    rotate: {x: 0, y: 0, z: 40},    
+    duration: 1500
+});
+
+sr.reveal('#mensagem-icone', {
+    rotate: {x: 0, y: 0, z: 40},    
+    duration: 2000
+});

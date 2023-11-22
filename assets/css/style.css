@@ -1,6 +1,7 @@
 :root {
     --cinza-escuro: #222831;
     --cinza: rgba(57, 62, 70, 0.75);
+    --cinza-claro: rgba(68, 71, 77, 0.75);;
     --branco: #EEE;
     --azul-esverdeado: #00ADB5;
 }
@@ -24,7 +25,10 @@ button {
     color: var(--branco);
     border: none;
     border-radius: 24px;
+    cursor: pointer;
+    transition: .4s;
 }
+
 
 header {
     display: flex;
@@ -119,10 +123,18 @@ header ul{
     background-color: var(--cinza-escuro);
 }
 
+#projetos-botao:hover {
+    background-color: var(--azul-esverdeado);   
+}
+
 #CV-botao {
     align-items: center;
     backdrop-filter: blur(2px);
 
+}
+
+#CV-botao:hover {
+    background-color: var(--cinza-claro);
 }
 
 .Sobre-mim {
@@ -174,6 +186,17 @@ header ul{
     align-items: center;
     gap: 21px;
     padding-top: 136px;
+    visibility: hidden;
+}
+
+.icones svg {
+    transition: .25s;
+}
+
+.icones svg:hover {
+    width: 47px;
+    height: 47px;
+    gap: 26px;
 }
 
 .projetos {
@@ -272,6 +295,10 @@ header ul{
     border-radius: 100%;
 }
 
+#direita:hover, #esquerda:hover {
+    background-color: var(--cinza-claro);
+}
+
 #direita img, #esquerda img {
     display: flex;
     width: 30px;
@@ -321,6 +348,10 @@ form button {
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 150%;
+}
+
+form button:hover {
+    background-color: var(--azul-esverdeado);
 }
 
 #mensagem {

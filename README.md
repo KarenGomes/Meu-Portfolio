@@ -1,5 +1,5 @@
 # portfólio
-Seja bem-vindo! 
+Seja bem-vindo! Acesso em: https://karengomes.github.io/portfolio/
 
 ## DESIGN 
 
